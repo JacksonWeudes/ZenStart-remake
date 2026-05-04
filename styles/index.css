@@ -1,0 +1,96 @@
+@import url(base.css);
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: .3rem 1.5rem;
+
+    border: 1px solid;
+}
+.header .mobile-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    width: 35px;
+    height: 35px;
+    padding: .2rem;
+
+    background-color: transparent;
+}
+.header .mobile-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+.header .desk-menu{
+    display: none;
+}
+.header .side-menu{
+    position: fixed;
+    top: 3rem;
+    right: -120%;
+
+    width: 100%;
+    height: 100%;
+    padding-inline: 3rem;
+
+    background-color: #f1f1f1;
+    border: 1px solid;
+}
+.header .side-menu h2{
+    padding-block: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.header .side-menu form{
+    display: flex;
+}
+.header .side-menu form input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 40px 0 0 40px;
+    border: 1px solid;
+}
+.header .side-menu form button{
+    padding: 10px 25px;
+    border: 1px solid;  
+    border-radius: 0 40px 40px 0;
+}
+.header .side-menu ul{
+    padding-block: 2rem;
+    list-style: none;
+}
+.header .side-menu ul li{
+    text-align: center;
+    text-transform: capitalize;
+}
+.header .side-menu ul li a{
+    display: block;
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+.header .side-menu .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .side-menu .socials a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    padding: 1.8rem;
+    margin-inline: .2rem;
+
+    font-size: 2.5rem;
+    border: 1px solid;
+    border-radius: 15px;
+}
