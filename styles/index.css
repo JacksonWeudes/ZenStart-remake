@@ -9,6 +9,10 @@
 
     border: 1px solid;
 }
+.header .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 .header .mobile-icon{
     display: flex;
     flex-direction: column;
@@ -39,7 +43,7 @@
     height: 100%;
     padding-inline: 3rem;
 
-    background-color: #f1f1f1;
+    background-color: #fff;
     border: 1px solid;
 }
 .header .side-menu h2{
@@ -93,4 +97,62 @@
     font-size: 2.5rem;
     border: 1px solid;
     border-radius: 15px;
+}
+
+.main .hero{
+    padding: 5rem 1rem;
+    border: 1px solid;
+    border-radius: 15px;
+}
+.main .hero h1{
+    margin-bottom: .5rem;
+    font-size: clamp(2.8rem, 4vw, 5.5rem);
+}
+.main .hero p{
+    width: 250px;
+    font-size: clamp(1rem, 2vw, 1rem);
+}
+.main .benefits{
+    display: grid;
+    gap: .5rem;
+    padding-block: .5rem;
+}
+.main .benefits h3{
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+.main .benefits .benefit-card{
+    display: flex;
+    align-items: end;
+    height: 290px;
+    padding: 1rem;
+
+    border: 1px solid;
+    border-radius: 15px;
+}
+.main .benefits .call-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 290px;
+    padding: 1rem;
+
+    border: 1px solid;
+    border-radius: 15px;
+}
+.main .benefits .call-card form{
+    display: flex;    
+}
+.main .benefits .call-card form input{
+    width: 100%;
+    padding: 10px 15px;
+
+    font-size: 1rem;
+
+    border-radius: 40px 0 0 40px;
+    border: 1px solid;
+}
+.main .benefits .call-card form button{
+    padding: 10px 25px;
+    border: 1px solid;  
+    border-radius: 0 40px 40px 0;
 }
