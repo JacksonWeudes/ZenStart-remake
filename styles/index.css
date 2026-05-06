@@ -99,6 +99,9 @@
     border-radius: 15px;
 }
 
+.main{
+    padding-inline: 1rem;
+}
 .main .hero{
     padding: 5rem 1rem;
     border: 1px solid;
@@ -121,8 +124,6 @@
     font-size: clamp(1.5rem, 3vw, 2rem);
 }
 .main .benefits .benefit-card{
-    display: flex;
-    align-items: end;
     height: 290px;
     padding: 1rem;
 
@@ -155,4 +156,45 @@
     padding: 10px 25px;
     border: 1px solid;  
     border-radius: 0 40px 40px 0;
+}
+
+
+@media screen and (min-width: 1200px){
+    .header{
+        padding: 1rem 2rem;
+    }
+    .header .mobile-icon{
+        display: none;
+    }
+    .header .desk-menu{
+        display: flex;
+        gap: .8rem;
+    }
+    .header .desk-menu a{
+        min-width: 110px;
+        padding: .3rem;
+
+        text-align: center;
+        text-transform: capitalize;
+
+        border: 1px solid;
+        border-radius: 40px;
+        color: #000;
+    }
+
+    .main{
+        padding-inline: 2rem;
+    }
+    .main .hero{
+        height: 400px;
+    }
+    .main .benefits{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .main .benefits .benefit-card{
+        height: 300px;
+    }
+    .main .benefits .call-card{
+        height: 300px;
+    }
 }
