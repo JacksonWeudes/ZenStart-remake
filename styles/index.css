@@ -109,7 +109,7 @@
 }
 .main .hero h1{
     margin-bottom: .5rem;
-    font-size: clamp(2.8rem, 4vw, 5.5rem);
+    font-size: clamp(2.8rem, 6vw, 6rem);
 }
 .main .hero p{
     width: 250px;
@@ -161,7 +161,45 @@
     padding: 10rem 1rem;
     text-align: center;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+.main .teachers{
+    display: grid;
+    gap: .5rem;
+    padding-block: .5rem;
+}
+.main .teachers .intro-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: .5rem;
+    height: 300px;
+    padding: 1rem;
     border: 1px solid;
+    border-radius: 15px;
+}
+.main .teachers .intro-card h3{
+    font-size: clamp(1.6rem, 3vw, 2rem);
+}
+.main .teachers .intro-card p{
+    font-size: clamp(1rem, 2vw, 1rem);
+}
+.main .teachers .teacher-card{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 450px;
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
+
+    border: 1px solid;
+    border-radius: 15px;
+}
+.main .teachers .teacher-card h3{
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 40px;
 }
 
 @media screen and (min-width: 768px){
@@ -193,6 +231,16 @@
     }
     .main .quote p{
         width: 60%;
+    }
+    .main .teachers{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .main .teachers .intro-card{
+        height: 450px;
+    }
+    .main .teachers .teacher-card{
+        width: 100%;
+        margin: 0;
     }
 }
 
