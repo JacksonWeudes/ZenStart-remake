@@ -153,13 +153,18 @@
     border: 1px solid;
 }
 .main .benefits .call-card form button{
-    padding: 10px 25px;
+    padding: 10px 15px;
     border: 1px solid;  
     border-radius: 0 40px 40px 0;
 }
+.main .quote{
+    padding: 10rem 1rem;
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    border: 1px solid;
+}
 
-
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 768px){
     .header{
         padding: 1rem 2rem;
     }
@@ -182,6 +187,16 @@
         color: #000;
     }
 
+    .main .quote{
+        padding: 10rem 2rem;
+        text-align: start;
+    }
+    .main .quote p{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 853px){
     .main{
         padding-inline: 2rem;
     }
