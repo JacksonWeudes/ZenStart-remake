@@ -199,6 +199,35 @@
     border: 1px solid;
     border-radius: 40px;
 }
+.main .reviews{
+    padding-block: 8rem;
+}
+.main .reviews h2{
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+}
+.main .reviews .reviews-box{
+    display: grid;
+    gap: .5rem;
+}
+.main .reviews .reviews-box .profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.main .reviews .reviews-box .profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+.main .reviews .reviews-box .review-card{
+    padding: 4rem 2rem;
+}
+.main .reviews .reviews-box .review-card p{
+    margin-block: 1rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
 
 @media screen and (min-width: 768px){
     .header{
@@ -240,6 +269,9 @@
         width: 100%;
         margin: 0;
     }
+    .main .reviews .reviews-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 853px){
@@ -257,5 +289,8 @@
     }
     .main .benefits .call-card{
         height: 310px;
+    }
+    .main .reviews .reviews-box{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
