@@ -11,6 +11,7 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 .header .mobile-icon{
     display: flex;
     flex-direction: column;
@@ -32,6 +33,7 @@
 .header .desk-menu{
     display: none;
 }
+
 .header .side-menu{
     position: fixed;
     top: 3rem;
@@ -113,6 +115,7 @@
     width: 250px;
     font-size: clamp(1rem, 2vw, 1rem);
 }
+
 .main .benefits{
     display: grid;
     gap: .5rem;
@@ -155,11 +158,13 @@
     border: 1px solid;  
     border-radius: 0 40px 40px 0;
 }
+
 .main .quote{
     padding: 10rem 1rem;
     text-align: center;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
+
 .main .teachers{
     display: grid;
     gap: .5rem;
@@ -199,6 +204,7 @@
     border: 1px solid;
     border-radius: 40px;
 }
+
 .main .reviews{
     padding-block: 8rem;
 }
@@ -227,6 +233,21 @@
 .main .reviews .reviews-box .review-card p{
     margin-block: 1rem;
     font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.main .call-to-action{
+    text-align: center;
+    padding-block: 15rem;
+    border: 1px solid;
+}
+.main .call-to-action p{
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+.main .call-to-action button{
+    padding: 10px 50px;
+    margin-top: 1rem;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    border-radius: 40px;
 }
 
 @media screen and (min-width: 768px){
