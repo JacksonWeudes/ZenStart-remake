@@ -1,4 +1,5 @@
 @import url(base.css);
+@import url(medias.css);
 
 .header{
     display: flex;
@@ -250,68 +251,49 @@
     border-radius: 40px;
 }
 
-@media screen and (min-width: 768px){
-    .header{
-        padding: 1rem 2rem;
-    }
-    .header .mobile-icon{
-        display: none;
-    }
-    .header .desk-menu{
-        display: flex;
-        gap: .8rem;
-    }
-    .header .desk-menu a{
-        min-width: 110px;
-        padding: .3rem;
+.main .sub-footer{
+    display: grid;
+    gap: 1rem;
+    padding-block: 5rem;
+}
+.main .sub-footer p{
+    font-size: clamp(1rem, 2vw, 1rem);
+}
+.main .sub-footer h3{
+    padding-bottom: .5rem;
+}
+.main .sub-footer .email h2{
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.main .sub-footer .email form{
+    display: flex;
+    padding-block: 1rem;
+}
+.main .sub-footer .email form input{
+    width: 90%;
+    padding: 10px 15px;
 
-        text-align: center;
-        text-transform: capitalize;
+    font-size: 1rem;
 
-        border: 1px solid;
-        border-radius: 40px;
-        color: #000;
-    }
-
-    .main .quote{
-        padding: 10rem 2rem;
-        text-align: start;
-    }
-    .main .quote p{
-        width: 60%;
-    }
-    .main .teachers{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .main .teachers .intro-card{
-        height: 450px;
-    }
-    .main .teachers .teacher-card{
-        width: 100%;
-        margin: 0;
-    }
-    .main .reviews .reviews-box{
-        grid-template-columns: repeat(2, 1fr);
-    }
+    border-radius: 40px 0 0 40px;
+    border: 1px solid;
+}
+.main .sub-footer .email form button{
+    padding: 10px 40px;
+    border: 1px solid;  
+    border-radius: 0 40px 40px 0;
+}
+.main .sub-footer .contact-socials a{
+    font-size: clamp(1.5rem, 6vw, 2rem);
 }
 
-@media screen and (min-width: 853px){
-    .main{
-        padding-inline: 2rem;
-    }
-    .main .hero{
-        height: 400px;
-    }
-    .main .benefits{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .main .benefits .benefit-card{
-        height: 310px;
-    }
-    .main .benefits .call-card{
-        height: 310px;
-    }
-    .main .reviews .reviews-box{
-        grid-template-columns: repeat(3, 1fr);
-    }
+.footer{
+    padding-block: 2rem;
+    text-align: center;
+    border: 1px solid;
+}
+.footer a{
+    font-weight: bold;
 }
