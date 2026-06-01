@@ -105,16 +105,22 @@
 }
 .main .hero{
     padding: 5rem 2rem;
-    border: 1px solid;
+    border: 1px solid var(--color-3);
     border-radius: 15px;
+    background-color: var(--green-1);
 }
 .main .hero h1{
     margin-bottom: .5rem;
     font-size: clamp(2.8rem, 6vw, 6rem);
+    color: #fff;
 }
 .main .hero p{
     width: 250px;
     font-size: clamp(1rem, 2vw, 1rem);
+    color: var(--color-1);
+}
+.main .hero img{
+    display: none;
 }
 
 .main .benefits{
@@ -126,11 +132,43 @@
     font-size: clamp(1.5rem, 3vw, 2rem);
 }
 .main .benefits .benefit-card{
-    height: 300px;
+    position: relative;
+
+    height: 500px;
     padding: 2rem;
 
-    border: 1px solid;
+    border: 1px solid var(--color-3);
     border-radius: 15px;
+}
+.main .benefits .benefit-card::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to top,
+        #000000c0,
+        #00000081,
+        #0000005d,
+        #0000002a,
+        transparent,
+        transparent
+    );
+    border-radius: 15px;
+}
+.main .benefits .benefit-card:nth-child(1){
+    background-image: url(../imgs/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+}
+.main .benefits .benefit-card:nth-child(2){
+    background-image: url(../imgs/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .main .benefits .call-card{
     display: flex;
@@ -139,8 +177,13 @@
     height: 290px;
     padding: 2rem;
 
-    border: 1px solid;
+    border: 1px solid var(--color-3);
     border-radius: 15px;
+    color: var(--color-1);
+    background-image: url(../imgs/ca.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 .main .benefits .call-card form{
     display: flex;    
@@ -152,12 +195,16 @@
     font-size: 1rem;
 
     border-radius: 40px 0 0 40px;
-    border: 1px solid;
+    border: 1px solid #000;
 }
 .main .benefits .call-card form button{
     padding: 10px 15px;
-    border: 1px solid;  
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
     border-radius: 0 40px 40px 0;
+    background-color: var(--green-1);
+    color: var(--color-2);
 }
 
 .main .quote{
@@ -296,4 +343,98 @@
 }
 .footer a{
     font-weight: bold;
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        padding: 1rem 2rem;
+    }
+    .header .mobile-icon{
+        display: none;
+    }
+    .header .desk-menu{
+        display: flex;
+        gap: .8rem;
+    }
+    .header .desk-menu a{
+        min-width: 110px;
+        padding: .3rem;
+
+        text-align: center;
+        text-transform: capitalize;
+
+        border: 1px solid var(--color-3);
+        border-radius: 40px;
+        background-color: var(--color-2);
+        box-shadow: 1px 1px 3px var(--color-4);
+    }
+
+    .main .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 550px !important;
+        padding: 0;
+    }
+    .main .hero .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2rem;
+    }
+    .main .hero img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+    .main .quote{
+        padding: 10rem 2rem;
+        text-align: start;
+    }
+    .main .quote p{
+        width: 60%;
+    }
+    .main .teachers{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .main .teachers .intro-card{
+        height: 450px;
+    }
+    .main .teachers .teacher-card{
+        width: 100%;
+        margin: 0;
+    }
+    .main .reviews .reviews-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main .sub-footer{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    .main .sub-footer .links{
+        padding-left: 7rem;
+    }
+
+}
+
+@media screen and (min-width: 853px){
+    .main{
+        padding-inline: 2rem;
+    }
+    .main .hero{
+        height: 400px;
+    }
+    .main .benefits{
+        grid-template-columns: 1.3fr 1.3fr 2fr;
+    }
+    .main .benefits .benefit-card{
+        height: 450px;
+    }
+    .main .benefits .call-card{
+        height: 450px;
+    }
+    .main .reviews .reviews-box{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

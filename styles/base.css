@@ -5,6 +5,13 @@
 :root{
     --font-1: "Roboto", sans-serif;
     --font-2: "Poppins", sans-serif;
+
+    --green-1: hsl(94, 47%, 48%);
+    --green-2: hsl(91, 52%, 40%);
+    --color-1: hsl(0, 0%, 90%);
+    --color-2: hsl(0, 0%, 95%);
+    --color-3: hsl(0, 0%, 55%);
+    --color-4: hsla(0, 0%, 0%, 0.452);
 }
 
 *{
@@ -12,6 +19,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body{
+    background-color: var(--color-1);
 }
 
 h1, h2, h3{
