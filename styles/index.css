@@ -146,6 +146,7 @@
     border: 1px solid var(--color-3);
     border-radius: 15px;
     background-color: var(--green-1);
+    box-shadow: 1px 1px 3px var(--color-4);
 }
 .main .hero h1{
     margin-bottom: .5rem;
@@ -177,6 +178,7 @@
 
     border: 1px solid var(--color-3);
     border-radius: 15px;
+    box-shadow: 1px 1px 3px var(--color-4);
 }
 .main .benefits .benefit-card::after{
     content: "";
@@ -222,6 +224,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right bottom;
+
+    box-shadow: 1px 1px 3px var(--color-4);
 }
 .main .benefits .call-card form{
     display: flex;    
@@ -234,6 +238,7 @@
 
     border-radius: 40px 0 0 40px;
     border: 1px solid #000;
+    box-shadow: 1px 1px 3px var(--color-4);
 }
 .main .benefits .call-card form button{
     padding: 10px 15px;
@@ -243,6 +248,7 @@
     border-radius: 0 40px 40px 0;
     background-color: var(--green-1);
     color: var(--color-2);
+    box-shadow: 1px 1px 3px var(--color-4);
 }
 
 .main .quote{
@@ -277,6 +283,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+    box-shadow: 1px 1px 3px var(--color-4);
 }
 .main .teachers .intro-card::after{
     content: "";
@@ -320,6 +328,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+    box-shadow: 1px 1px 3px var(--color-4);
 }
 .main .teachers .teacher-card:nth-child(2){
     background-image: url(../imgs/t1.jpg);
@@ -392,6 +402,7 @@
     color: var(--color-2);
     background-color: var(--green-1);
     transition: .2s ease-in-out;
+    box-shadow: 1px 1px 3px var(--color-4);
 }
 .main .call-to-action button:hover{
     background-color: var(--green-2);
@@ -425,6 +436,8 @@
 
     border-radius: 40px 0 0 40px;
     border: 1px solid var(--color-3);
+
+    box-shadow: 1px 1px 3px var(--color-4);
 }
 .main .sub-footer .email form button{
     padding: 10px 40px;
@@ -432,6 +445,8 @@
     border-radius: 0 40px 40px 0;
     background-color: var(--green-1);
     color: var(--color-2);
+
+    box-shadow: 1px 1px 3px var(--color-4);
 }
 .main .sub-footer .contact-socials a{
     font-size: clamp(1.5rem, 6vw, 2rem);
@@ -468,6 +483,11 @@
         border-radius: 40px;
         background-color: var(--color-2);
         box-shadow: 1px 1px 3px var(--color-4);
+        transition: background-color .2s ease-in-out;
+    }
+    .header .desk-menu a:hover{
+        background-color: var(--green-1);
+        color: var(--color-2);
     }
 
     .main .hero{
