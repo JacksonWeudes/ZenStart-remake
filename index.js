@@ -5,6 +5,7 @@ function toggleMenu()
 
     mobileIcon.addEventListener("click", () => {
         sideMenu.classList.toggle("open");
+        mobileIcon.classList.toggle("active");
     })
 }
 
